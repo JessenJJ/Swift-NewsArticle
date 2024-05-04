@@ -18,6 +18,11 @@
 		5BE542E72BD755E200E3BE35 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542E62BD755E200E3BE35 /* APIService.swift */; };
 		5BE542EA2BD75AE000E3BE35 /* NewsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542E92BD75AE000E3BE35 /* NewsVM.swift */; };
 		5BE542ED2BD7625800E3BE35 /* String+ExtDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542EC2BD7625700E3BE35 /* String+ExtDate.swift */; };
+		5BE542FD2BD7857D00E3BE35 /* CNBCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542FC2BD7857D00E3BE35 /* CNBCModel.swift */; };
+		5BE542FF2BD785A400E3BE35 /* CNBCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE542FE2BD785A400E3BE35 /* CNBCView.swift */; };
+		5BE543012BD787B600E3BE35 /* ConstantCNBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543002BD787B600E3BE35 /* ConstantCNBC.swift */; };
+		5BE543032BD787FD00E3BE35 /* APIServiceCNBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543022BD787FD00E3BE35 /* APIServiceCNBC.swift */; };
+		5BE543072BD78A1600E3BE35 /* CNBCNewsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE543062BD78A1600E3BE35 /* CNBCNewsVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		5BE542E62BD755E200E3BE35 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5BE542E92BD75AE000E3BE35 /* NewsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVM.swift; sourceTree = "<group>"; };
 		5BE542EC2BD7625700E3BE35 /* String+ExtDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtDate.swift"; sourceTree = "<group>"; };
+		5BE542FC2BD7857D00E3BE35 /* CNBCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNBCModel.swift; sourceTree = "<group>"; };
+		5BE542FE2BD785A400E3BE35 /* CNBCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNBCView.swift; sourceTree = "<group>"; };
+		5BE543002BD787B600E3BE35 /* ConstantCNBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantCNBC.swift; sourceTree = "<group>"; };
+		5BE543022BD787FD00E3BE35 /* APIServiceCNBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceCNBC.swift; sourceTree = "<group>"; };
+		5BE543062BD78A1600E3BE35 /* CNBCNewsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNBCNewsVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +75,10 @@
 		5BE542C72BD74ACF00E3BE35 /* NewsIndo */ = {
 			isa = PBXGroup;
 			children = (
-				5BE542EB2BD7623200E3BE35 /* Helper */,
-				5BE542E82BD75ACE00E3BE35 /* ViewModel */,
-				5BE542E32BD7552500E3BE35 /* Services */,
 				5BE542D92BD74B0600E3BE35 /* Resources */,
-				5BE542D82BD74AFC00E3BE35 /* Model */,
-				5BE542D72BD74AF600E3BE35 /* View */,
+				5BE542F72BD784BB00E3BE35 /* Kumparan */,
+				5BE542F02BD7846700E3BE35 /* CNBC */,
+				5BE542EB2BD7623200E3BE35 /* Helper */,
 				5BE542D62BD74AEF00E3BE35 /* App */,
 				5BE542CE2BD74AD300E3BE35 /* Preview Content */,
 			);
@@ -140,6 +148,61 @@
 				5BE542EC2BD7625700E3BE35 /* String+ExtDate.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		5BE542F02BD7846700E3BE35 /* CNBC */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542F62BD784AC00E3BE35 /* Services */,
+				5BE542F12BD7847000E3BE35 /* Model */,
+				5BE542F52BD7849D00E3BE35 /* ViewModel */,
+				5BE542F32BD7847D00E3BE35 /* View */,
+			);
+			path = CNBC;
+			sourceTree = "<group>";
+		};
+		5BE542F12BD7847000E3BE35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542FC2BD7857D00E3BE35 /* CNBCModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BE542F32BD7847D00E3BE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542FE2BD785A400E3BE35 /* CNBCView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BE542F52BD7849D00E3BE35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543062BD78A1600E3BE35 /* CNBCNewsVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BE542F62BD784AC00E3BE35 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BE543002BD787B600E3BE35 /* ConstantCNBC.swift */,
+				5BE543022BD787FD00E3BE35 /* APIServiceCNBC.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5BE542F72BD784BB00E3BE35 /* Kumparan */ = {
+			isa = PBXGroup;
+			children = (
+				5BE542E32BD7552500E3BE35 /* Services */,
+				5BE542D82BD74AFC00E3BE35 /* Model */,
+				5BE542E82BD75ACE00E3BE35 /* ViewModel */,
+				5BE542D72BD74AF600E3BE35 /* View */,
+			);
+			path = Kumparan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,13 +282,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE542FF2BD785A400E3BE35 /* CNBCView.swift in Sources */,
+				5BE543032BD787FD00E3BE35 /* APIServiceCNBC.swift in Sources */,
 				5BE542ED2BD7625800E3BE35 /* String+ExtDate.swift in Sources */,
 				5BE542DC2BD7508100E3BE35 /* News.swift in Sources */,
 				5BE542E72BD755E200E3BE35 /* APIService.swift in Sources */,
 				5BE542CB2BD74ACF00E3BE35 /* ContentView.swift in Sources */,
+				5BE543012BD787B600E3BE35 /* ConstantCNBC.swift in Sources */,
 				5BE542C92BD74ACF00E3BE35 /* NewsIndoApp.swift in Sources */,
 				5BE542E52BD7554C00E3BE35 /* Constant.swift in Sources */,
+				5BE543072BD78A1600E3BE35 /* CNBCNewsVM.swift in Sources */,
 				5BE542EA2BD75AE000E3BE35 /* NewsVM.swift in Sources */,
+				5BE542FD2BD7857D00E3BE35 /* CNBCModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
